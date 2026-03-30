@@ -68,6 +68,46 @@ The main focus is on **secure backend logic, role-based access control, and clea
 
 ## 📁 Project Structure
 
+project/
+│
+├── config/
+│   └── db.js                # Database connection
+│
+├── controllers/
+│   ├── adminController.js  # Admin logic
+│   ├── authController.js   # Login & auth
+│   ├── dashboardController.js
+│   ├── noteController.js   # Notes CRUD
+│   └── userController.js   # User management
+│
+├── middleware/
+│   ├── authMiddleware.js       # JWT verification
+│   ├── roleMiddleware.js       # Role-based access
+│   └── ownershipMiddleware.js  # Resource ownership check
+│
+├── models/
+│   ├── User.js
+│   └── Note.js
+│
+├── routes/
+│   ├── adminRoutes.js
+│   ├── dashboardRoutes.js
+│   ├── noteRoutes.js
+│   └── userRoutes.js
+│
+├── scripts/
+│   └── seedLoginUser.js    # Seed initial user/admin
+│
+├── postman/
+│   ├── role-dashboard.postman_collection.json
+│   └── role-dashboard.postman_environment.json
+│
+├── .env                   # Environment variables
+├── server.js              # Entry point
+├── package.json
+└── README.md
+```
+
 
 ```
 
